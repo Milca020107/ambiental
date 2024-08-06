@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Diferencia entre cambio climático y calentamiento global</h1>
+  <br>
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/ComprensionLectora.mp4' type="video/mp4" title="1080p">
+  </video><br>
+
+
+
+
+  <div class="selected_option">
+   
+   
+    <ion-item>
+      <ion-label>
+    Principal diferencia entre cambio climático y calentamiento global.
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Incorrecto, son los efectos de acciones hechas por el hombre. ">
+                Uno es natural y el otro no.
+        </ion-select-option>
+        <ion-select-option value="Correcto, El cambio climático incluye el calentamiento global y otros cambios que alteran patrones climáticos.">
+               CC incluye al CG       
+               </ion-select-option>
+        <ion-select-option value="Incorrecto, de nuevo puedes intentar.">
+          CC es a corto plazo 
+   </ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+
+    <ion-item>
+      <ion-label>
+     Son cambios a largo plazo en los patrones climáticos, por ejemplo, temperaturas, precipitaciones, etc. ¿Qué fenómeno es?
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto ">
+               Cambio climático
+        </ion-select-option>
+        <ion-select-option value="Incorrecto.">
+               Calentamiento global
+        </ion-select-option>
+       
+      </ion-select>
+    </ion-item>
+  
+  
+  
+  
+    
+   
+    {{selected_option}}
+  
+  
+  </div>
+  
+
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/espanol'" [routerLinkActive]="'active'">Regresar </ion-button><br>
+ 
+</div>
+  <p> Amoxtlic</p>
+  
+</ion-content>

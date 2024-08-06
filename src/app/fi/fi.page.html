@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Herramientas de la educación ambiental</h1>
+  <br>
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/FuentesDeInfo.mp4' type="video/mp4" title="1080p">
+  </video><br>
+
+
+  <div class="selected_option">
+    <ion-item>
+      <ion-label>
+      Marco encontró una revista the "el Sol" narrando lo que sucedió en la conquista de México. ¿Es una fuente primaria o secundaria?
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option alue="Inorrecto, una fuente primaria proviene de alguien o algo que haya vivido/presenciado el acontecimiento ">
+               Primaria
+        </ion-select-option>
+        <ion-select-option value="Correcto">
+                Secundaria
+        </ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>
+      Después de hacer una investigación y escribir un artículo sobre el tema, al final hay que incluir...
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Inorrecto, Se puede utilizar en ciertos tipos de textos. Aunque cuando se realiza una investigación es esencial dar créditos con cierto formato estandarizado.  ">
+               Agradecimientos
+        </ion-select-option>
+        <ion-select-option value="Correcto, las referencias se incluyen al finalizar tu trabajo. Dependiendo del formato que te pida tu institución usarás un modo de cita diferente. Pero el más común es el APA. ">
+               Referencias
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, dependiendo del texto incluirá una conclusión, sin embargo, al finalizar un escrito originado por una investigación es necesario dar los créditos de los lugares donde tomaste la información.">
+              Una conclusión
+   </ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+
+    <ion-item>
+      <ion-label>
+      Estefanía es una periodista mexicana que entrevistó a un criminal, él da cierta información para su artículo. Es una fuente:
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto,porque él presenció la situación y da su testimonio. ">
+                Primaria
+        </ion-select-option>
+        <ion-select-option value="Incorrecto. La información es de primera mano, no ha sido alterada. ">
+               Secundaria
+        </ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+  
+  
+  
+  
+    
+   
+    {{selected_option}}
+  
+  
+  </div>
+  
+
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/spanish'" [routerLinkActive]="'active'">Regresar </ion-button><br>
+  
+</div>
+  <p> Amoxtlic</p>
+  
+</ion-content>

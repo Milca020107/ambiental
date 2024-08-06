@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Efectos calentamiento global y cambio climático a nivel mundial</h1>
+  <br>
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/Investigacion.mp4' type="video/mp4" title="1080p">
+  </video><br>
+
+  <div class="selected_option">
+    <ion-item>
+      <ion-label>
+     ¿Cuál de los siguientes es un efecto del calentamiento global sobre los océanos?
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Incorrecto, prueba de nuevo">
+                Disminución nivel del mar
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, vuelve a intentar ">
+                Temperatura del agua
+        </ion-select-option>
+        <ion-select-option value="Correcto.">
+          Aumento acidez del agua
+  </ion-select-option>
+  
+        
+      </ion-select>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>
+      ¿Cómo afecta el cambio climático a la biodiversidad?
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Incorrecto, existen consecuencias graves
+          ">
+                Nada
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, el cambio climático afecta la fauna negativamente">
+               Más fauna
+        </ion-select-option>
+        <ion-select-option value="Correcto, los animales tienen que migrar gracias a los cambios drásticos.">
+          Migración de especies
+   </ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+
+   
+   
+    {{selected_option}}
+  
+  
+  </div>
+  
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/espanol'" [routerLinkActive]="'active'">Regresar </ion-button><br>
+  
+</div>
+  <p> Amoxtlic</p>
+ 
+</ion-content>

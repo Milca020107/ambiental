@@ -1,0 +1,70 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Gestión de residuos</h1>
+  <br>
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/HechosyOpiniones.mp4' type="video/mp4" title="1080p">
+  </video><br>
+
+  <div class="selected_option">
+    <ion-item>
+      <ion-label>
+      La reducción de la contaminación del aire y suelo es un beneficio de la gestión adecuada de residuos.
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto. ">
+                Verdadero
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, intenta de nuevo">
+                Falso
+        </ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>
+      La jerarquía de gestión de residuos de la más preferida a la menos es: Reducción, reuso, reciclaje y disposición en vertederos.
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Incorrecto, otra vez intenta">
+                Falso
+        </ion-select-option>
+        <ion-select-option value="Correcto, es la jerarquía que se utiliza.">
+               Verdadero
+        </ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+  
+
+    
+  
+  
+  
+    
+   
+    {{selected_option}}
+  
+  
+  </div>
+  
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/espanol'" [routerLinkActive]="'active'">Regresar</ion-button><br>
+ 
+</div>
+  <p> Amoxtlic</p>
+ 
+</ion-content>

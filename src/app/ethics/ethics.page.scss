@@ -1,0 +1,51 @@
+ion-img{
+  display: block;
+
+margin: auto;
+}
+ion-menu-button {
+color: var(--ion-color-secondary);
+}
+p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  text-align: center;
+  font-weight: bold;
+}
+h1{
+  
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  color:black;
+}
+.selected_option{
+  text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color: #4D9C99;
+}
+ion-button{
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
+  
+}
+.centrar-boton-ionic{
+  text-align: center;
+}
+h4{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ion-content {
+  --background: none;
+  
+  background-image: url('./../../assets/intro/inter2.png');
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

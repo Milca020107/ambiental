@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Pequeñas acciones que debemos hacer en casa para el cuidado del medio ambiente</h1>
+  <br>
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/tlc.mp4' type="video/mp4" title="1080p">
+  </video><br>
+
+  <div class="selected_option">
+    <ion-item>
+      <ion-label>
+      Una pequeña acción marca la diferencia.
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto ">
+                Verdadero
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, intenta de nuevo ">
+                Falso
+        </ion-select-option>
+       
+      </ion-select>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>
+     ¿Qué acción puedo realizar para cuidar al medio ambiente?
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Las 3 opciones son correctas">
+                Ahorrar agua
+        </ion-select-option>
+        <ion-select-option value="Todas las opciones son correctas">
+              Ahorrar energía
+        </ion-select-option>
+        <ion-select-option value="Todas son correctas">
+          Separar residuos
+   </ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+
+    
+  
+  
+    
+   
+    {{selected_option}}
+  
+  
+  </div>
+
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/ciencia'" [routerLinkActive]="'active'">Regresar</ion-button><br>
+ 
+</div>
+  <p> Amoxtlic</p>
+
+</ion-content>

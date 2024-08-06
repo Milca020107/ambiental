@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Sequías e incendios</h1>
+  <br>
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/Encuesta.mp4' type="video/mp4" title="1080p">
+  </video><br>
+
+  <div class="selected_option">
+    <ion-item>
+      <ion-label>
+      Las principales causas de los incendios forestales son los rayos, terremotos y fenómenos naturales.
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto, las principales causas son las actividades humanas tales como la quema de basura y de cultivo, fogatas, etc.">
+                Falso
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, intenta de nuevo. ">
+                Verdadero
+        </ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>
+      ¿Qué efecto tiene la sequía en los ecosistemas (flora y fauna)?
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto. ">
+                Estrés hídrico
+        </ion-select-option>
+        <ion-select-option value="Incorrecto. ">
+               Adaptación
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, las sequías en los ecosistemas dañan a la biodiversidad ">
+          Aumento de diversidad
+   </ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+
+   
+    
+  
+  
+  
+    
+   
+    {{selected_option}}
+  
+  
+  </div>
+  
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/espanol'" [routerLinkActive]="'active'">Regresar</ion-button><br>
+  
+</div>
+  <p> Amoxtlic</p>
+ 
+</ion-content>

@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>¿Cómo crear alianzas estratégicas para que tu proyecto ambiental tenga mejor impacto?</h1>
+  <br>
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/concordagrama.mp4' type="video/mp4" title="1080p">
+  </video><br>
+
+
+  <div class="selected_option">
+  <ion-item>
+    <ion-label>
+   Una alianza debe estar hecha de organizaciones o grupos con el mismo objetivo en común.
+    </ion-label>
+    <ion-select placeholder="selecciona"
+      [(ngModel)]="selected_option">
+      <ion-select-option value="Correcto, será más fácil planear actividades y después desarrollarlas">
+              Verdadero
+      </ion-select-option>
+      <ion-select-option value="Incorrecto, intenta de nuevo ">
+              Falso
+      </ion-select-option>
+      
+    </ion-select>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label>
+   Es mejor si menos personas se suman a la causa
+    </ion-label>
+    <ion-select placeholder="selecciona"
+      [(ngModel)]="selected_option">
+      <ion-select-option value="Correcto, es necesario que más personas se unan a la causa para tener un mayor impacto. ">
+              Falso
+      </ion-select-option>
+      <ion-select-option value="Incorrecto, otra vez">
+              Correcto
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+
+  
+ 
+
+
+  
+   
+ 
+  {{selected_option}}
+
+
+</div>
+
+
+
+
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/ciencia'" [routerLinkActive]="'active'">Regresar</ion-button><br>
+  
+</div>
+  <p> Amoxtlic</p>
+  
+</ion-content>

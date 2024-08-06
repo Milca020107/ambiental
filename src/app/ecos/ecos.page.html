@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Acciones en Gto para combatir el cambio climático.</h1>
+  <br>
+  
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/ecosistemas.mp4' type="video/mp4" title="1080p">
+  </video><br>
+
+
+  <div class="selected_option">
+    <ion-item>
+      <ion-label>
+      ¿Qué iniciativa relacionada con la reforestación se está llevando a cabo en Gto?
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto, esto se logro mediante la plantación de árboles en zonas deforestadas, rurales y urbanas.">
+                Aumento de áreas verdes
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, intenta otra vez ">
+                Tala de árboles
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, intenta de nuevo ">
+          Plantar especies exóticas
+  </ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>
+      ¿Qué acción está tomando GTO para promover el transporte sostenible?
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto, entre más simple mejor. Solo recuerda dar un mensaje concreto.  ">
+                Construir carreteras 
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, la idea de un anuncio publicitario es que sea llamativo y fácil de entender. El texto en exceso podría alejar a posibles lectores">
+               Incentivar uso de autos
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, un texto argumentativo es muy largo, el anuncio publicitario es fácil de entender">
+          Mejorar transporte público
+   </ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+
+ 
+  
+  
+  
+  
+    
+   
+    {{selected_option}}
+  
+  
+  </div>
+  
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/espanol'" [routerLinkActive]="'active'">Regresar </ion-button><br>
+  
+</div>
+  <p> Amoxtlic</p>
+ 
+</ion-content>

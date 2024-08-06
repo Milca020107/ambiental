@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Día del sobregiro</h1>
+  <br>
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/Resena.mp4' type="video/mp4" title="1080p">
+  </video><br>
+
+  <div class="selected_option">
+    <ion-item>
+      <ion-label>
+     El día del sobregiro implica que la humanidad está utilizando más recursos de los que el planeta puede regenerar, lo que provoca la degradación ambiental.
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto ">
+                Verdadero
+        </ion-select-option>
+        <ion-select-option value="Incorrecto">
+                Falso
+        </ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>
+      ¿Cómo retrasar el día del sobregiro?
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Incorrecto.">
+                Aumentando la producción 
+        </ion-select-option>
+        <ion-select-option value="Correcto, reducir el uso de recursos naturales es la solución">
+               Reduciendo recursos
+        </ion-select-option>
+        <ion-select-option value="Incorrecto, eso incluso adelantaría el día del sobregiro">
+          Consumiendo más
+   </ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+
+    
+  
+  
+  
+    
+   
+    {{selected_option}}
+  
+  
+  </div>
+  
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/espanol'" [routerLinkActive]="'active'">Regresar</ion-button><br>
+  
+</div>
+  <p> Amoxtlic</p>
+ 
+</ion-content>

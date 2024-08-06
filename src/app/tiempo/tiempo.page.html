@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Módulo 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Importancia de la educación ambiental</h1>
+  <br>
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/tiempo.mp4' type="video/mp4" title="1080p">
+  </video><br>
+  <div class="selected_option">
+    <ion-item>
+      <ion-label>
+      La educación ambiental es relevante, porque gracias a ella podemos saber en qué situaciones está la tierra y cómo podemos aportar a salvar al medio ambiente.
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto. ">
+                Verdadero
+        </ion-select-option>
+        <ion-select-option value="Incorrecto.">
+                Falso
+        </ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label>
+     En la educación ambiental debemos aprender los problemas y sus respectivas soluciones. Así como herramientas que nos permitan ser creativos.
+      </ion-label>
+      <ion-select placeholder="selecciona"
+        [(ngModel)]="selected_option">
+        <ion-select-option value="Correcto  ">
+                Verdadero
+        </ion-select-option>
+        <ion-select-option value="Incorrecto">
+               Falso
+        </ion-select-option>
+       
+      </ion-select>
+    </ion-item>
+  
+
+  
+  
+  
+  
+    
+   
+    {{selected_option}}
+  
+  
+  </div>
+  
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" [routerLink]="'/ciencia'" [routerLinkActive]="'active'">Regresar</ion-button><br>
+ 
+</div>
+  <p> Amoxtlic</p>
+ 
+</ion-content>

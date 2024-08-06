@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Diseña</ion-title>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content class="background">
+  <ion-img src='./../../assets/intro/a.png'></ion-img>
+  <br>
+  <h1><ion-text color="success"><ion-icon name="bowling-ball"></ion-icon></ion-text>Segunda parte de tu proyecto ambiental</h1>
+  <h4>     Ve el video, aplica lo que aprendiste en el módulo 2. Al final sube tu evidencia.
+  </h4><br>
+  
+  <video class="fp_docs_player" id="fp_docs_player_0" controls style="width: 100%; height: 25%;">
+  <source src='assets/video/m2.mp4' type="video/mp4" title="1080p">
+  </video><br><br>
+  <div class="centrar-boton-ionic">
+    <ion-button color="secondary" [routerLink]="'/rights'" [routerLinkActive]="'active'">Inspírate</ion-button><br>
+    
+  </div>
+  <div class="centrar-boton-ionic">
+  <ion-button color="success" href="https://forms.gle/LtWtaT9CLFhnqtLCA" [routerLinkActive]="'active'">Subir evidencia</ion-button><br>
+  
+</div>
+<div class="centrar-boton-ionic">
+  <ion-button color="light" [routerLink]="'/prim'" [routerLinkActive]="'active'">Regresar</ion-button><br>
+  
+</div>
+  <p> Amoxtlic</p>
+ 
+</ion-content>
